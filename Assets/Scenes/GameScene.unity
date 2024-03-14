@@ -217,7 +217,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 91002606d8b4a1f428f43311dbdff49a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.560138
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91002606d8b4a1f428f43311dbdff49a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -225,11 +225,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91002606d8b4a1f428f43311dbdff49a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.6237122
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91002606d8b4a1f428f43311dbdff49a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.67988956
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91002606d8b4a1f428f43311dbdff49a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -237,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91002606d8b4a1f428f43311dbdff49a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7333146
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91002606d8b4a1f428f43311dbdff49a, type: 3}
       propertyPath: m_LocalRotation.z
@@ -249,7 +249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91002606d8b4a1f428f43311dbdff49a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 94.33
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91002606d8b4a1f428f43311dbdff49a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -357,7 +357,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -509,7 +509,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 2.88, z: -24.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -529,7 +529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 639458753}
   smoothSpeed: 0.125
-  offset: {x: 25, y: 4, z: 0}
+  offset: {x: 4, y: 25, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
