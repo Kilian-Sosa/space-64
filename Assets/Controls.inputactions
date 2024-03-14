@@ -1,0 +1,74 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "Spaceship",
+            "id": "208bf721-d4e9-4ac3-a70b-7d4df316e622",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "df3b252e-116b-4896-a6f4-0e41ed4e3f92",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MoveYaw",
+                    "type": "Value",
+                    "id": "d7189952-4d06-493e-8e39-8e1fa2109009",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Accelerate",
+                    "type": "Button",
+                    "id": "e73fba95-bc94-4652-9747-c133e6e38afe",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5b349d1a-3916-46a3-bc02-b898afaad74e",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "72e9680d-1e7e-4005-9c06-4f08f2b328ae",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveYaw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "82922999-1395-4140-b3c1-482fe73d3355",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accelerate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
