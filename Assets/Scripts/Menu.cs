@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Menu : MonoBehaviour
-{
-    public void Start()
+public class Menu : MonoBehaviour {
+
+    public void StartGame()
     {
-        int savedSong = PlayerPrefs.GetInt("BackgroundMusicSelected", 0);
-        float savedVolume = PlayerPrefs.GetFloat("BackgroundMusicVolume", 0.72f);
-        AudioManager.instance.PlayMusic(savedSong.ToString());
-        AudioManager.instance.ChangeVolume(savedVolume);
+        SceneController.instance.LoadScene("GameScene");
     }
-    public void GoToSettings()
-    {
+    public void GoToSettings() {
         SceneController.instance.LoadScene("GeneralSettingsScene");
+    }
+
+    public void GoToRanking() {
+        SceneController.instance.LoadScene("RankingScene");
+    }
+    public void GoToMenu() {
+        SceneController.instance.LoadScene("MenuScene");
     }
 }
