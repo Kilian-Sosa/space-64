@@ -4,15 +4,11 @@ using UnityEngine;
 public class PickUp : MonoBehaviour {
 
     [SerializeField] TMP_Text countText;
-    [SerializeField] int MAX_GEMS;
+    [SerializeField] int MAX_GEMS = 10;
     int count = 0;
 
     void Start() {
-        countText.text = $"GEMS LEFT: {MAX_GEMS - count}";
-    }
-
-    void Update() {
-
+        //countText.text = $"GEMS LEFT: {MAX_GEMS - count}";
     }
 
     void OnTriggerEnter(Collider other) {
@@ -22,6 +18,6 @@ public class PickUp : MonoBehaviour {
 
     void AddCount() {
         count++;
-        countText.text = $"GEMS LEFT: {MAX_GEMS - count}";
+        //countText.text = $"GEMS LEFT: {MAX_GEMS - count}";
     }
 }
