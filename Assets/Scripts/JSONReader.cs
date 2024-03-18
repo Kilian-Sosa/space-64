@@ -5,32 +5,30 @@ using TMPro;
 using UnityEngine;
 
 
-public class RankingController : MonoBehaviour {
+public class JSONReader : MonoBehaviour {
     [SerializeField] TMP_Text[] playerNames;
     [SerializeField] TMP_Text[] playerTimes;
     string dataFilePath = "ranking.json";
 
     void Start() {
-        SaveData();
         ReadData();
     }
 
-    public void SaveData() {
-        List<PlayerData> playersList = new List<PlayerData>();
-        playersList.Add(new PlayerData("Abby", 39));
-        playersList.Add(new PlayerData("Bobby", 96));
+    //public void SaveData() {
+    //    List<PlayerData> playersList = new List<PlayerData>();
+    //    playersList.Add(new PlayerData("Abby", 39));
+    //    playersList.Add(new PlayerData("Bobby", 96));
 
-        PlayerDataList playerDataList = new PlayerDataList();
-        playerDataList.playerData = playersList;
+    //    PlayerDataList playerDataList = new PlayerDataList();
+    //    playerDataList.playerData = playersList;
       
-        string jsonData = JsonUtility.ToJson(playerDataList, true);
-        PlayerPrefs.SetString("PlayerList", jsonData);
+    //    string jsonData = JsonUtility.ToJson(playerDataList, true);
+    //    PlayerPrefs.SetString("PlayerList", jsonData);
 
-        File.WriteAllText(dataFilePath, jsonData);
-    }
+    //    File.WriteAllText(dataFilePath, jsonData);
+    //}
 
     public void ReadData() {
-        string json = PlayerPrefs.GetString("PlayerList");
         if (File.Exists(dataFilePath)) {
             string jsonData = File.ReadAllText(dataFilePath);
             PlayerDataList playerDataList = JsonUtility.FromJson<PlayerDataList>(jsonData);
@@ -38,15 +36,12 @@ public class RankingController : MonoBehaviour {
         }
     }
 
-    public void SetData(PlayerDataList playerDataList)
-    {
-        for(int i = 0; i < playerDataList.playerData.Count; i++)
-        {
+    public void SetData(PlayerDataList playerDataList) {
+        playerDataList.playerData.Sort((x, y) => x.time.CompareTo(y.time));
+
+        for(int i = 0; i < 3 && i < playerDataList.playerData.Count; i++) {
             playerNames[i].text = playerDataList.playerData[i].name;
             playerTimes[i].text = $"{playerDataList.playerData[i].time} secs.";
         }
-       
     }
-
-   
 }
