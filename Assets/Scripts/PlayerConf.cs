@@ -16,50 +16,37 @@ public class RankingController : MonoBehaviour {
     }
 
     public void SaveData() {
-        //PlayerDataList playerDataList = new PlayerDataList(new List<PlayerData>());
-        //PlayerData player1Data = new PlayerData("Abby", 69);
-        //PlayerData player2Data = new PlayerData("Abby", 96);
-        //playerDataList.playerData.Add(player1Data);
-        //playerDataList.playerData.Add(player2Data);
-        //foreach (PlayerData playerData in playerDataList.playerData)
-        //{
-        //    Debug.Log(JsonUtility.ToJson(playerDataList, true));
-        //}
-
-        //File.WriteAllText(dataFilePath, JsonUtility.ToJson(playerDataList, true));
         List<PlayerData> playersList = new List<PlayerData>();
         playersList.Add(new PlayerData("Abby", 39));
         playersList.Add(new PlayerData("Bobby", 96));
 
         PlayerDataList playerDataList = new PlayerDataList();
         playerDataList.playerData = playersList;
-        foreach (PlayerData playerData in playersList)
-        {
-            Debug.Log(playerData.Name);
-        }
+      
         string jsonData = JsonUtility.ToJson(playerDataList, true);
+        PlayerPrefs.SetString("PlayerList", jsonData);
+
         File.WriteAllText(dataFilePath, jsonData);
-        //File.Close
     }
 
     public void ReadData() {
+        string json = PlayerPrefs.GetString("PlayerList");
         if (File.Exists(dataFilePath)) {
             string jsonData = File.ReadAllText(dataFilePath);
             PlayerDataList playerDataList = JsonUtility.FromJson<PlayerDataList>(jsonData);
-            foreach (PlayerData playerData in playerDataList.playerData)
-            {
-                Debug.Log(playerData.Name + " " + playerData.Time);
-            }
-            //SetData(playerData);
+            SetData(playerDataList);
         }
     }
 
-    //public void SetData(PlayerData playerData) {
-    //    inputField.text = playerData.playerName;
-    //    slider.value = playerData.fuelQuantity;
-    //}
+    public void SetData(PlayerDataList playerDataList)
+    {
+        for(int i = 0; i < playerDataList.playerData.Count; i++)
+        {
+            playerNames[i].text = playerDataList.playerData[i].name;
+            playerTimes[i].text = $"{playerDataList.playerData[i].time} secs.";
+        }
+       
+    }
 
-    //public void UpdateFuelText() {
-    //    fuelText.text = slider.value.ToString();
-    //}
+   
 }

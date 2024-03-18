@@ -218,7 +218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 36 secs.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 595e81c97dabc6e41810447633f5a17a, type: 2}
   m_sharedMaterial: {fileID: 1186180945964037209, guid: 595e81c97dabc6e41810447633f5a17a, type: 2}
@@ -961,7 +961,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: '                 --'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 595e81c97dabc6e41810447633f5a17a, type: 2}
   m_sharedMaterial: {fileID: 1186180945964037209, guid: 595e81c97dabc6e41810447633f5a17a, type: 2}
@@ -1095,7 +1095,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 36 secs.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 595e81c97dabc6e41810447633f5a17a, type: 2}
   m_sharedMaterial: {fileID: 1186180945964037209, guid: 595e81c97dabc6e41810447633f5a17a, type: 2}
@@ -2036,7 +2036,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: '                 --'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 595e81c97dabc6e41810447633f5a17a, type: 2}
   m_sharedMaterial: {fileID: 1186180945964037209, guid: 595e81c97dabc6e41810447633f5a17a, type: 2}
@@ -2170,7 +2170,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: '                 --'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 595e81c97dabc6e41810447633f5a17a, type: 2}
   m_sharedMaterial: {fileID: 1186180945964037209, guid: 595e81c97dabc6e41810447633f5a17a, type: 2}
@@ -2372,7 +2372,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 36 secs.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 595e81c97dabc6e41810447633f5a17a, type: 2}
   m_sharedMaterial: {fileID: 1186180945964037209, guid: 595e81c97dabc6e41810447633f5a17a, type: 2}

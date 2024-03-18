@@ -1,26 +1,15 @@
 using System;
 using System.Collections.Generic;
 
+[Serializable]
 public class PlayerData {
 
-    private string name;
-    private int time;
+    public string name;
+    public int time;
 
     public PlayerData(string name, int time) {
         this.name = name;
         this.time = time;
-    }
-
-    public string Name
-    {
-        get { return name; }
-        set { name = value; }
-    }
-
-    public int Time
-    {
-        get { return time; }
-        set { time = value; }
     }
 }
 
@@ -28,9 +17,4 @@ public class PlayerData {
 public class PlayerDataList
 {
     public List<PlayerData> playerData;
-
-    //public PlayerDataList(List<PlayerData> data)
-    //{
-    //    playerData = data;
-    //}
 }
