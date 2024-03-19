@@ -8,7 +8,7 @@ public class PickUp : MonoBehaviour {
     int count = 0;
 
     void Start() {
-        //countText.text = $"GEMS LEFT: {MAX_GEMS - count}";
+        countText.text = $"GEMS LEFT: {MAX_GEMS - count}";
     }
 
     void OnTriggerEnter(Collider other) {
@@ -18,6 +18,6 @@ public class PickUp : MonoBehaviour {
 
     void AddCount() {
         count++;
-        //countText.text = $"GEMS LEFT: {MAX_GEMS - count}";
+        countText.text = $"GEMS LEFT: {MAX_GEMS - count}";
     }
 }

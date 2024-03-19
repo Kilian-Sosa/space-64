@@ -50,13 +50,6 @@ public class SettingsController : MonoBehaviour {
         }
     }
 
-    public void ExitGame() {
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #elif UNITY_STANDALONE_WIN
-            Application.Quit();
-        #endif
-    }
 
     public void SaveSettings() { 
         PlayerPrefs.Save();

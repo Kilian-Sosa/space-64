@@ -6,7 +6,6 @@ public class EasterEggController : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Algooo");
         if (other.gameObject.CompareTag("EasterText"))
         {
             SceneController.instance.LoadScene("GameScene");
