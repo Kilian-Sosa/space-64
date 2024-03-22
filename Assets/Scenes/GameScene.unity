@@ -680,7 +680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a00ddf95c05d344081d60a5706f0846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throttle: 1
+  throttle: 0
   pitchPower: 200
   rollPower: 130
   yawPower: 120
@@ -1347,7 +1347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 496724689}
-  smoothSpeed: 0.01
+  smoothSpeed: 0.1
   offset: {x: 0, y: 2, z: 5}
 --- !u!1001 &1093055936
 PrefabInstance:
