@@ -21,7 +21,7 @@ public class JSONReader : MonoBehaviour {
 
     //    PlayerDataList playerDataList = new PlayerDataList();
     //    playerDataList.playerData = playersList;
-      
+
     //    string jsonData = JsonUtility.ToJson(playerDataList, true);
     //    PlayerPrefs.SetString("PlayerList", jsonData);
 

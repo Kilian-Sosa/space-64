@@ -19,5 +19,9 @@ public class PickUp : MonoBehaviour {
     void AddCount() {
         count++;
         countText.text = $"GEMS LEFT: {MAX_GEMS - count}";
+        if (count == MAX_GEMS) {
+            PlayerPrefs.SetInt("score", (int) GameObject.Find("HUD").GetComponent<Timer>().remainingTime);
+            SceneController.instance.LoadScene("GameOverScene");
+        }
     }
 }

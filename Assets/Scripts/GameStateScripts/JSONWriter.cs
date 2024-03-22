@@ -34,11 +34,6 @@ public class JSONWriter : MonoBehaviour {
             PlayerDataList playerDataList = JsonUtility.FromJson<PlayerDataList>(jsonData);
             return playerDataList;
         }
-
         return null;
     }
-
-  
-
-   
 }
