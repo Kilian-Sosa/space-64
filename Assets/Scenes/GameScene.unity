@@ -690,6 +690,8 @@ MonoBehaviour:
   moveAction: {fileID: -477097381594563544, guid: 5b9c8bc694100224f9147acb351545f6, type: 3}
   moveActionYaw: {fileID: 1408979373288866449, guid: 5b9c8bc694100224f9147acb351545f6, type: 3}
   accelAction: {fileID: 4694958347621073, guid: 5b9c8bc694100224f9147acb351545f6, type: 3}
+  leftPropeller: {fileID: 1243791209}
+  rightPropeller: {fileID: 918975130}
 --- !u!1 &588573795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,7 +1263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &918975131
 Transform:
   m_ObjectHideFlags: 0
@@ -6261,7 +6263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1243791210
 Transform:
   m_ObjectHideFlags: 0

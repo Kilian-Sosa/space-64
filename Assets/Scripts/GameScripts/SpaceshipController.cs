@@ -10,6 +10,8 @@ public class SpaceshipController : MonoBehaviour {
     [SerializeField] InputActionReference moveActionYaw;
     [SerializeField] InputActionReference accelAction;
 
+    [SerializeField] GameObject leftPropeller, rightPropeller;
+
     bool firstTime = true;
 
     void Update() {
@@ -24,6 +26,7 @@ public class SpaceshipController : MonoBehaviour {
         }
 
         if (throttle) {
+            if (!leftPropeller.activeSelf) ActivatePropellers();
             transform.position += transform.forward * enginePower * Time.deltaTime;
             activePitch = moveDirection.y * pitchPower * Time.deltaTime;
             activeRoll = moveDirection.x * rollPower * Time.deltaTime;
@@ -35,5 +38,10 @@ public class SpaceshipController : MonoBehaviour {
                 Space.Self);
 
         }
+    }
+
+    void ActivatePropellers() {
+        leftPropeller.SetActive(true);
+        rightPropeller.SetActive(true);
     }
 }
