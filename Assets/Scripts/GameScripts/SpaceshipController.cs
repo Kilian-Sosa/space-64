@@ -12,8 +12,15 @@ public class SpaceshipController : MonoBehaviour {
 
     [SerializeField] GameObject leftPropeller, rightPropeller;
 
+    [SerializeField] GameObject mobilePanel;
+
     bool firstTime = true;
 
+    void Start() {
+        #if UNITY_ANDROID
+                    mobilePanel.SetActive(true);
+        #endif
+    }
     void Update() {
         Vector2 moveDirection = moveAction.action.ReadValue<Vector2>();
         Vector2 moveDirectionYaw = moveActionYaw.action.ReadValue<Vector2>();
