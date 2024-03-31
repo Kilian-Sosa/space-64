@@ -12,6 +12,7 @@ public class PickUp : MonoBehaviour {
     }
 
     void OnTriggerEnter(Collider other) {
+        AudioManager.instance.PlaySFX("GetGem");
         AddCount();
         Destroy(other.gameObject);
     }

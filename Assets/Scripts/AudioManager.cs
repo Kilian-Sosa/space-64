@@ -48,11 +48,7 @@ public class AudioManager : MonoBehaviour
     private void LoadSFXClips()
     {
         // Los recursos (ASSETS) que se cargan en TIEMPO DE EJECUCIÓN DEBEN ESTAR DENTRO de una carpeta denominada /Assets/Resources/SFX
-        sfxClips["0"] = Resources.Load<AudioClip>("SFX/BackgroundMusic_1");
-        sfxClips["1"] = Resources.Load<AudioClip>("SFX/BackgroundMusic_2");
-        sfxClips["2"] = Resources.Load<AudioClip>("SFX/BackgroundMusic_3");
-        sfxClips["3"] = Resources.Load<AudioClip>("SFX/BackgroundMusic_4");
-        sfxClips["4"] = Resources.Load<AudioClip>("SFX/BackgroundMusic_5");
+        sfxClips["GetGem"] = Resources.Load<AudioClip>("SFX/getGem");
     }
 
     // Método privado para cargar la música de fondo directamente desde las carpetas
