@@ -33,7 +33,10 @@ public class SpaceshipController : MonoBehaviour {
         }
 
         if (throttle) {
-            if (!propeller.activeSelf) propeller.SetActive(true);
+            if (!propeller.activeSelf) {
+                propeller.SetActive(true);
+                GameObject.Find("HUD").GetComponent<Timer>().enabled = true;
+            }
             transform.position += transform.forward * enginePower * Time.deltaTime;
             activePitch = moveDirection.y * pitchPower * Time.deltaTime;
             activeRoll = moveDirection.x * rollPower * Time.deltaTime;
