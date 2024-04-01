@@ -14,9 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RankingScene.unity
     guid: 5a68cde12dec0854bac4d47180b1fef6
-  - enabled: 0
-    path: Assets/Scenes/a.unity
-    guid: 6acfc0cf9afbf4c47b5e742f937a009d
   - enabled: 1
     path: Assets/Scenes/EasterEggScene.unity
     guid: 9bad3ab728318364d9f4b36c6a562d88
