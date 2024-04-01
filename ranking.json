@@ -1,44 +1,28 @@
 {
     "playerData": [
         {
-            "name": "Abby",
+            "name": "Abi",
             "time": 39
         },
         {
             "name": "Bobby",
-            "time": 96
+            "time": 196
         },
         {
             "name": "pepe",
-            "time": 40
+            "time": 140
         },
         {
             "name": "Anonymous",
-            "time": 10
+            "time": 110
         },
         {
             "name": "Anonymous",
-            "time": 9
+            "time": 19
         },
         {
             "name": "Anonymous",
-            "time": 25
-        },
-        {
-            "name": "g",
-            "time": 36
-        },
-        {
-            "name": "juanito el de los palotes",
-            "time": 89
-        },
-        {
-            "name": "mi tia",
-            "time": 0
-        },
-        {
-            "name": "Kili",
-            "time": 53
+            "time": 125
         }
     ]
 }

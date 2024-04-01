@@ -13,10 +13,11 @@ public class SettingsController : MonoBehaviour {
     private int selectedSong;
 
     void Start() {
-        savedVolume = PlayerPrefs.GetFloat("BackgroundMusicVolume");
+        savedVolume = PlayerPrefs.GetFloat("BackgroundMusicVolume",0.72f);
         savedSong = PlayerPrefs.GetInt("BackgroundMusicSelected");
         selectedVolume = savedVolume;
         selectedSong = savedSong;
+        Debug.Log("VOLUMEN:" + savedVolume);
         LoadVolume(savedVolume);
         LoadSong(savedSong);
     }

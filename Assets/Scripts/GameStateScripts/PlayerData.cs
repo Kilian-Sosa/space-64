@@ -17,4 +17,9 @@ public class PlayerData {
 public class PlayerDataList
 {
     public List<PlayerData> playerData;
+
+    public PlayerDataList()
+    {
+        playerData = new List<PlayerData>();
+    }
 }

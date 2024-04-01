@@ -13,6 +13,12 @@ public class Menu : MonoBehaviour {
             SceneController.instance.LoadScene("GameScene");
         }
     }
+
+    public void ResetGame()
+    {
+        SceneController.instance.LoadScene("GameScene");
+    }
+
     public void GoToSettings() {
         SceneController.instance.LoadScene("GeneralSettingsScene");
     }
