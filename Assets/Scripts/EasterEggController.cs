@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class EasterEggController : MonoBehaviour
 {
+
+    public void Update(){
+        if(Input.GetKey(KeyCode.Escape)){
+            SceneController.instance.LoadScene("GameScene");
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("EasterText"))
